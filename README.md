@@ -112,9 +112,9 @@ case "snickers":
 }
 ```
 
-- No parentheses around the conditions
+- No parentheses around the conditions 
 - No opening and closing brackets in each of the cases
-- No default case in the switch statement
+- No default case in the switch statement  <-- THIS IS THE ERROR
 - No print statement right outside the switch statement
 
 ***
@@ -126,6 +126,19 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 let currentWeather = "rain"
 
 // enter code below
+
+switch currentWeather {
+    case "rain":
+        print("get an umbrella and save yo hurrr")
+    case "sunny":
+        print("get that SPF if you ain't about that cancer life")
+    case "snow":
+        print("it's snowing and my social life is falling")
+    default:
+        print("please use rain, sunny, or snow. otherwise I can't help you")
+}
+
+
 ```
 
 ***
@@ -138,6 +151,8 @@ let firstName = "John"
 let lastName = "Appleseed"
 
 // enter code below
+let fullName = String(firstName + lastName)
+print("The Fellow's full name is \(fullName)")
 ```
 
 ***
