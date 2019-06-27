@@ -151,7 +151,7 @@ let firstName = "John"
 let lastName = "Appleseed"
 
 // enter code below
-let fullName = String(firstName + lastName)
+let fullName = "\(firstName) \(lastName)"
 print("The Fellow's full name is \(fullName)")
 ```
 
