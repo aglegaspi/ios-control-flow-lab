@@ -28,10 +28,10 @@ if conditionTwo {
 print("D")
 ```
 
-- A
+- A <-- Printed
 - B
-- C
-- D
+- C <-- Printed
+- D <-- Printed
 
 ***
 ## Question 2
@@ -40,18 +40,23 @@ What will the code block below print?  Select all that apply:
 
 ```swift
 let appInfo = (name: "myCoolApp", version: 0.4)
+
 switch appInfo {
+
  case (_, 0.0..<1.0):
  print("\(appInfo.0) hasn't released yet")
+ 
  case ("myCoolApp", _):
  print("Thanks for looking at myCoolApp!")
+ 
  default:
  print("I'm not quite sure what you are looking at")
+ 
 }
 ```
 
 - appInfo.0 hasn't released yet
-- myCoolApp hasn't released yet
+- myCoolApp hasn't released yet <-- ANSWER
 - Thanks for looking at myCoolApp!
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
@@ -63,13 +68,18 @@ What will be printed to the console when the code below is run?  Select all that
 
 ```swift
 let x: Int = 4
+
 switch x {
+
 case 0..<4:
  print("A")
+ 
 case 5..<10:
  print("B")
+ 
 case is Double:
  print("C")
+ 
 default:
  print("D")
 }
@@ -78,7 +88,7 @@ default:
 - A
 - B
 - C
-- D
+- D <-- ANSWER
 
 ***
 ## Question 4
@@ -89,12 +99,16 @@ What are the errors in the code below for the switch statement? Select all that 
 let candyType : String = "skittles"
 
 switch candyType {
+
 case "mAndM":
  print("Melts in your mouth, not in your hand")
+ 
 case "skittles":
  print("Taste the rainbow")
+ 
 case "snickers":
  print("Hungry? Grab a Snickers")
+ 
 }
 ```
 
